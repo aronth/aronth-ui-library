@@ -1,10 +1,11 @@
 import type { App } from "vue";
-import { MyButton } from "@/components";
+import { UIButton, UIInputField } from "@/components";
 
 export default {
   install: (app: App) => {
-    app.component("MyButton", MyButton);
+    app.component("UIButton", UIButton);
+    app.component("UIInputField", UIInputField);
   },
 };
 
-export { MyButton };
+export { UIButton, UIInputField };
